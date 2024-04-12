@@ -26,10 +26,8 @@ from config import BANNED_USERS, lyrical
 
 
 @app.on_message(
-    command(
-                ["play","تشغيل","شغل"], prefixes=["","/"]     
-          )
-  
+    command(["play","تشغيل","شغل"], prefixes=["/", ""]
+  )
   & ~BANNED_USERS
 
 )
